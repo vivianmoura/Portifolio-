@@ -731,14 +731,16 @@
    * #clients 
    */
   
-  .clients { margin-bottom: 15px; }
+   .clients {
+    margin-bottom: 15px;
+  }
   
   .clients-list {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center; /* Alterado para center para centralizar verticalmente as logos */
     gap: 15px;
-    margin: 0 -15px;
+    margin: 0;
     padding: 25px;
     padding-bottom: 25px;
     overflow-x: auto;
@@ -748,46 +750,20 @@
     scroll-padding-inline: 25px;
   }
   
-.clients-item {
-    min-width: 50%;
-    scroll-snap-align: start;
+  .clients-item {
+    flex: 1; /* Alterado para flex: 1 para que todos os itens ocupem o mesmo espaço */
   }
   
-.clients-item img {
-    width: 100%;
-    filter: grayscale(1);
-    transition: var(--transition-1);
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-
-.clients-item-webtech{
-    object-fit: cover;
-    padding-top: 15px;
-    filter: grayscale(1);
-    transition: var(--transition-1);
-  }
-
-.clients-item-kitter{
-    object-fit: cover;
-    padding-top: 35px;
+  .clients-item img {
+    width: 100%; /* Tamanho máximo das imagens */
+    height: auto; /* Altura automática para manter a proporção */
     filter: grayscale(1);
     transition: var(--transition-1);
   }
   
-.clients-item-doclab{
-  object-fit: cover;
-  padding-top: 35px;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-  
-}
-
-  .clients-item img:hover { filter: grayscale(0); }
-  
-  
-  
-  
+  .clients-item img:hover {
+    filter: grayscale(0);
+  }
   
   /*-----------------------------------*\
     #RESUME
