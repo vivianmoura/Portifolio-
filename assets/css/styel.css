@@ -1545,6 +1545,83 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+/* Modal */
+.form-btn{
+  font-weight: 600;
+  background-color: black;
+  color: var(--vegas-gold);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all .4s ease;
+}
+
+
+.form-btn:hover{
+  background-color: #fff;
+  color: #fff;
+  /* border: solid 1px #eee; */
+}
+
+.modal{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.conteudo-modal{
+  margin: 0 auto;
+  margin-top: 3%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.cabecalho-modal{
+  padding: 1px 8px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #eee 1px;
+}
+
+.cabecalho-modal .titulo-modal{
+  font-weight: bold;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.cabecalho-modal .cabecalho-modal-fechar{
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+
+.corpo-modal .text-modal{
+  margin: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+
+.rodape-modal{
+  
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+}
+
+/* end modal */
+
 
 
 

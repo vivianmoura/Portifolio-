@@ -1301,10 +1301,25 @@
 
             <textarea name="message" class="form-input" placeholder="Digite sua mensagem aqui." required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" value="Enviar">
+            <button class="form-btn"  onclick="abrirModal('vis-modal')"  type="submit" value="Enviar">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Enviar Mensagem</span>
             </button>
+
+            <div id="vis-modal" class="modal">
+              <div class="conteudo-modal">
+                  <div class="cabecalho-modal">
+                      <h1 class="titulo-modal">Sua mensagem foi enviada com sucesso!</h1>
+                      <span class="cabecalho-modal-fechar" onclick="fecharModal('vis-modal')">X</span>
+                  </div>
+                  <div class="corpo-modal">
+                      <p class="text-modal">Obrigada por entrar em contato<br>Em breve entraremos em contato.</p>
+                  </div>
+                  <!-- <div class="rodape-modal">
+                      <button class="btn-outline-success" onclick="fecharModal('vis-modal')">OK</button>
+                  </div> -->
+              </div>
+          </div>
 
           </form>
 
