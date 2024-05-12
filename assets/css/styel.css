@@ -1548,7 +1548,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Modal */
 .form-btn{
   font-weight: 600;
-  background-color: black;
+  /* background-color: black; */
   color: var(--vegas-gold);
   padding: 10px 15px;
   border-radius: 8px;
@@ -1560,8 +1560,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .form-btn:hover{
-  background-color: #fff;
-  color: #fff;
+  /* background-color: var(--vegas-gold); */
+  color: var(--vegas-gold);
   /* border: solid 1px #eee; */
 }
 
