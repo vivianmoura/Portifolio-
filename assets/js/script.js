@@ -136,7 +136,6 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 //MODAL
-
 function abrirModal(carregarModal){
   // console.log("Carregar a janela modal:" + carregarModal);
   let modal = document.getElementById(carregarModal);
