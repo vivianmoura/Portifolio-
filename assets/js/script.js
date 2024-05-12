@@ -144,13 +144,13 @@ function abrirModal(carregarModal){
   // document.body.style.overflow = 'hidden';
 }
 
-function fecharModal(fecharModal){
-// console.log("Fechar a janela modal:" + fecharModal);
+// function fecharModal(fecharModal){
+// // console.log("Fechar a janela modal:" + fecharModal);
 
-let modal = document.getElementById(fecharModal);
+// let modal = document.getElementById(fecharModal);
 
-modal.style.display = 'none';
-}
+// modal.style.display = 'none';
+// }
 
 
 
